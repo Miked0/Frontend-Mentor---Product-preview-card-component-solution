@@ -1,0 +1,137 @@
+/*
+GLOBALS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+*{margin: 0 auto;
+  padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+    /*Primary*/
+    
+    --darkCyan: #3c8067;
+    --DarkGrey: #1a362c;
+    --Cream: #f2ebe3;
+    
+    /*Neutral*/
+
+    --veryDarkBlue: #1c232b;
+    --darkGrayishBlue: #6c7289;
+    --white: #ffffff;
+
+    font-size: 62.5%;
+/* 1rem = 10px */
+}
+
+
+p{
+    font-size: 1.4rem;
+}    
+
+body{
+    max-width: 1440px;
+    background-color: var(--Cream);
+}
+
+.mobile-only{
+    display: none;
+}
+
+
+.perfume{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--white);
+    border-radius: .8rem;
+    height: 45rem;
+width: 60rem;}
+
+.container{
+    margin-block: 15rem;
+    margin-inline: 40rem;
+}
+.img-sec img{
+    max-width: 100%;
+    height: 45rem;
+    border-radius: .8rem  0rem 0rem .8rem;
+}
+.perfume-dec{display: block;
+    padding-top: 3rem;
+    letter-spacing: .3rem;
+    color: var(--darkGrayishBlue);
+    font-size: 1.2rem;
+    font-family: "montserrat", sans-serif;
+}
+.perfume-name{
+    margin-block: 2rem;
+
+}
+
+.perfume-name{
+    font-size: 3.2rem;
+    max-width: 9ch;
+    margin-inline: 0;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+}
+
+.perfume-description{
+font-family: "montserrat", sans-serif;
+color: var(--darkGrayishBlue);
+max-width: 25ch;
+line-height: 2rem;
+
+}
+
+.price-sec{
+    margin-top: 3rem;
+    display: flex;
+align-items: center;
+
+}
+
+.primary-price{
+    font-family: "Fraunces", sans-serif;
+font-size: 3rem;
+color: var(--darkCyan);
+margin-left: 0
+;
+}
+.discount-price{
+    font-size: 1.4rem;
+    margin-left: -1rem;
+color: var(--darkGrayishBlue);
+text-decoration:line-through;
+}
+
+.addToCart{
+    margin-top: 2rem;
+    padding: 1.5rem 8rem;
+    border-radius: .8rem;
+    border: none;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--darkCyan);
+    position: relative;
+
+}
+
+.addToCart:hover{
+    background-color: var(--DarkGrey);
+    transition: all 0.3s;
+}
+
+.addToCart::before{
+    content:"";
+background-image: url(/images/icon-cart.svg);
+width: 2.4rem;
+height: 2.4rem;
+position: absolute;
+background-repeat: no-repeat;
+margin-left: -2.2rem;
+}
